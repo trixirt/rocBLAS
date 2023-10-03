@@ -123,7 +123,7 @@ if( BUILD_CLIENTS_BENCHMARKS OR BUILD_CLIENTS_TESTS)
         set( BLAS_LIBRARY /usr/local/lib/libblis.a )
       endif()
     else()
-      set( BLAS_LIBRARY "blas" )
+      set( BLAS_LIBRARY "cblas" )
     endif()
   else() # WIN32
     set( BLAS_INCLUDE_DIR ${OPENBLAS_DIR}/include CACHE PATH "OpenBLAS library include path" )
