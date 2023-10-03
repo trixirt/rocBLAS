@@ -131,7 +131,7 @@ if( BUILD_CLIENTS_BENCHMARKS OR BUILD_CLIENTS_TESTS)
         message(STATUS "Linking BLIS LIB: ${BLAS_LIBRARY}")
       endif()
     else()
-      set( BLAS_LIBRARY "blas" )
+      set( BLAS_LIBRARY "cblas" )
     endif()
   else() # WIN32
     set( BLAS_INCLUDE_DIR ${OPENBLAS_DIR}/include CACHE PATH "OpenBLAS library include path" )
